@@ -1,16 +1,29 @@
-.nav-activate {
-    outline: none;
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.nav-activator {
     padding: 10px;
+    border-radius: 50px;
+    border: none;
     background-color: lightblue;
+}
+
+.close-button {
+
 }
 
 .nav {
     position: fixed;
-    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 30%;
     height: 100%;
-
+    transition: 0.3s all ease;
 }
 
 .invisible {
-    display: none;
+    transform: translateX(-100%);
 }

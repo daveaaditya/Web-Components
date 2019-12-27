@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,17 +10,15 @@
         <script src="app.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <button onclick="onClick()" class="nav-activate">Does this work?</button>
+        <button onclick="onClick()" class="nav-activator">OPEN SIDEBAR</button>
         <nav id="navigation" class="nav invisible">
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-                <li>Item 5</li>
+            <button class="nav-activator close-button" onclick="onClick()">CLOSE SIDEBAR</button>
+            <ul class="sidebar-links">
+                <li class="sidebar-link">Item 1</li>
+                <li class="sidebar-link">Item 2</li>
+                <li class="sidebar-link">Item 3</li>
+                <li class="sidebar-link">Item 4</li>
+                <li class="sidebar-link">Item 5</li>
             </ul>
         </nav>
     </body>
