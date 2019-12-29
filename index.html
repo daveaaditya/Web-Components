@@ -10,9 +10,9 @@
         <script src="app.js"></script>
     </head>
     <body>
-        <button onclick="onClick()" class="nav-activator">OPEN SIDEBAR</button>
+        <button onclick="onClick('navigation')" class="nav-activator">OPEN SIDEBAR</button>
         <nav id="navigation" class="nav invisible">
-            <button class="nav-activator close-button" onclick="onClick()">CLOSE SIDEBAR</button>
+            <button class="nav-activator close-button" onclick="onClick('navigation')">CLOSE SIDEBAR</button>
             <ul class="sidebar-links">
                 <li class="sidebar-link">Item 1</li>
                 <li class="sidebar-link">Item 2</li>
@@ -21,7 +21,17 @@
                 <li class="sidebar-link">Item 5</li>
             </ul>
         </nav>
-
-        <button class="modal-activator">OPEN MODAl</button>
+        <button class="modal-activator" onclick="onClick('modal')">OPEN MODAL</button>
+        <div id="modal" class="modal invisible">
+            <div class="modal-header">THIS IS THE TITLE</div>
+            <div class="modal-body">
+                <div class="modal-content">
+                    <p>THIS IS THE MODAL CONTENT</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-activator" onclick="onClick('modal')">CLOSE MODAL</button>
+            </div>
+        </div>
     </body>
 </html>
