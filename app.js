@@ -1,5 +1,5 @@
-function onClick() {
-    const sidebar = document.getElementById('navigation');
-    sidebar.classList.toggle('visible');
-    sidebar.classList.toggle('invisible');
+function onClick(toggleItem) {
+    const component = document.getElementById(toggleItem);
+    component.classList.toggle('visible');
+    component.classList.toggle('invisible');
 }
